@@ -1,8 +1,8 @@
 var barking = new Audio("barking.wav");
-var chime = new Audio("chime.mp3");
+var chime = new Audio("chime.wav");
 var piano = new Audio("piano.wav")
-var camera = new Audio("camera_shutter.mp3")
-var lion = new Audio("lion_roar.mp3")
+var camera = new Audio("camera_shutter.wav")
+var lion = new Audio("lion_roar.wav")
 
 
 function play(x)
