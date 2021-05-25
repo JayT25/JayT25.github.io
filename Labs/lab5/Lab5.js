@@ -5,32 +5,32 @@ var camera = new Audio("camera_shutter.wav")
 var lion = new Audio("lion_roar.wav")
 
 
-function play(x)
+function playAudio(x)
 {
   x.play();
 }
 
 const dogButton = document.getElementById('dogButton');
 dogButton.onclick = function() {
-  play(barking);
+  playAudio(barking);
 }
 
 const chimeButton = document.getElementById('chimeButton');
 chimeButton.onclick = function() {
-  play(chime);
+  playAudio(chime);
 }
 
 const pianoButton = document.getElementById('pianoButton');
 pianoButton.onclick = function() {
-  play(piano);
+  playAudio(piano);
 }
 
 const cameraButton = document.getElementById('cameraButton');
 cameraButton.onclick = function() {
-  play(camera);
+  playAudio(camera);
 }
 
 const roarButton = document.getElementById('roarButton');
 roarButton.onclick = function() {
-  play(lion);
+  playAudio(lion);
 }
