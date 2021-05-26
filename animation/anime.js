@@ -38,3 +38,5 @@ function frame() {
 	animate();
 	requestAnimationFrame(frame);
 }
+
+frame();
