@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <div style='width:50%'></div>
+    <canvas id="bar" width="1" height="1"></canvas>
+  </div>
+  <div style='width:50%'></div>
+    <canvas id="doughnut" width="1" height="1"></canvas>
+  </div>
+<script>
+
+new Chart(document.getElementById("doughnut"), {
+    type: 'doughnut',
+    data: {
+      labels: ["01-073-2010","02-14-2011","03-25-2012", "04-26-2013", "05-27-2014", "06-2-2015", "07-9-2016", "08-06-2017","09-1-2018","10-21-2019"],
+      datasets: [
+        {
+          label: "Socks bought in winter",
+          backgroundColor: ["red", "orange","cyan","magenta","purple","green","yellow","black","brown","grey"],
+          data: [220,90,50,76,212,17,56,280,265,287]
+        }
+      ]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'Socks bought'
+      }
+    }
+});
+
+new Chart(document.getElementById("bar"), {
+    type: 'bar',
+    data: {
+      labels: ["01-073-2010","02-14-2011","03-25-2012", "04-26-2013", "05-27-2014", "06-2-2015", "07-9-2016", "08-06-2017","09-1-2018","10-21-2019"],
+      datasets: [
+        {
+          label: "Socks bought",
+          backgroundColor: ["red", "orange","cyan","magenta","purple","green","yellow","black","brown","grey"],
+          data: [220,90,50,76,212,17,56,280,265,287]
+        }
+      ]
+    },
+    options: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: 'Socks bought'
+      }
+    }
+});
+
+
+
+</script>
+
+</body > 
+</html>
