@@ -19,7 +19,7 @@ const spritesheet = new Image("assets/charz.png");
 
 function animate() {
 	//start drawing the sprite on sheet
-	context.drawImage(
+	ctx.drawImage(
 		spritesheet, 
 		0, 
 		0, 
