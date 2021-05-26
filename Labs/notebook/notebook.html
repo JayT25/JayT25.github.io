@@ -8,15 +8,15 @@
     <p><b>Write down your notes</p></b>
     <textarea id="input" type=text placeholder='Write something..' name="notebook" oninput="myFunction()" rows="10" cols="80"></textarea>
     <p>
-      <button id="clearArea" type="button" onClick="Reset()" value="Reset">clearArea</button>
+      <button id="clear" type="button" onClick="Reset()" value="Reset">clearArea</button>
     </p>
   </form>
   <script>
     var title = document.getElementById("title");
     var notebook = document.getElementById("input");
-    var clearArea = document.getElementById("clearArea");
+    var clearArea = document.getElementById("clear");
 
-    notes.oninput = function()
+    notebook.oninput = function()
     {
       setValue();
     }
