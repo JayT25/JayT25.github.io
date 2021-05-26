@@ -1,7 +1,7 @@
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
-const frameWidth = 63;
+const frameWidth = 66;
 const frameHeight = 92;
 const xPos = 120;
 const yPos = 190;
@@ -10,6 +10,7 @@ const scale = 1;
 const fps = 60;
 const secUpdate = 1 * fps;
 let count = 0;
+var frameIndex = 0;
 
 canvas.style.marginTop = window.innerHeight / 2 - canvas.height / 2 + "px";
 
@@ -20,7 +21,7 @@ function animate() {
 	//start drawing the sprite on sheet
 	ctx.drawImage(
 		spriteSheet, 
-		2 * frameWidth, 
+		frameIndex * frameWidth, 
 		0, 
 		frameWidth, 
 		frameHeight, 
@@ -29,6 +30,17 @@ function animate() {
 		frameWidth*scale, 
 		frameHeight*scale
 	);
+
+	count++;
+
+	if (count > 16) {
+		frameIndex++;
+		count = 0;
+	}
+
+	if (frameIndex > 17) {
+		frameIndex = 0;
+	}
 
 }
 
