@@ -20,7 +20,7 @@ function animate() {
 	//start drawing the sprite on sheet
 	ctx.drawImage(
 		spriteSheet, 
-		0, 
+		2 * frameWidth, 
 		0, 
 		frameWidth, 
 		frameHeight, 
