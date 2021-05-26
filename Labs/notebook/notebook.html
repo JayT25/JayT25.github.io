@@ -14,7 +14,7 @@
   <script>
     var title = document.getElementById("title");
     var notebook = document.getElementById("input");
-    var clearArea = document.getElementById("clear");
+    var clearArea = document.getElementById("clearArea");
 
     notes.oninput = function()
     {
@@ -27,9 +27,10 @@
       notebook.value = localStorage.getItem("input");
     }
 
-    clearArea.onclick = function(){
-      title.value='';
-      notebook.value='';
+    clearArea.onclick = function()
+    {
+      title.value = '';
+      notebook.value = '';
       setValue();
     }
 
