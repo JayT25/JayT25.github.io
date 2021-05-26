@@ -2,7 +2,7 @@ const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
 const frameWidth = 63;
-const frameHeight = 89;
+const frameHeight = 92;
 const xPos = 120;
 const yPos = 190;
 const scale = 1;
