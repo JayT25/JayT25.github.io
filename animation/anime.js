@@ -13,7 +13,7 @@ let count = 0;
 
 canvas.style.marginTop = window.innerHeight / 2 - height / 2 + "px";
 
-const spritesheet = new Image("acharz.png");
+const spritesheet = new Image("charz.png");
 
 function animate() {
 	//start drawing the sprite on sheet
