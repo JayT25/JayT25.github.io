@@ -11,7 +11,7 @@ const fps = 60;
 const secUpdate = 1 * fps;
 let count = 0;
 
-canvas.style.marginTop = window.innerHeight / 2 - height / 2 + "px";
+canvas.style.marginTop = window.innerHeight / 2 - canvas.height / 2 + "px";
 
 const spritesheet = new Image("assets/charz.png");
 
