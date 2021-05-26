@@ -1,9 +1,9 @@
 html, body {
-	background: rgb(0,128,128);
+	background: #111;
 }
 
 canvas {
-	background: rgb(0,128,128);	
+	background: #EEE;
 	display: block;
 	margin: 0 auto;
 	border: solid 6px #AAA;
