@@ -32,7 +32,7 @@ function animate() {
 }
 
 function frame() {
-	ctx.clearRect(0, 0, width, height);
+	ctx.clearRect(0, 0, canvas.width, canvas.height);
 	animate();
 	requestAnimationFrame(frame);
 }
