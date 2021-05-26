@@ -4,9 +4,16 @@
 <title>Animation</title>
 </head>
 <body>
+    <audio src="charizard.mp3" id="announcer" loop="loop"></audio>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById("announcer").play();
+        }
+    </script>
     <canvas id="canvas" width="600" height="600">
         <script src="anime.js"></script>
     </canvas>
+
 
     <br>
     <a href='https://JayT25.github.io'>Home</a>
