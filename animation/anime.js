@@ -6,8 +6,6 @@ const frameHeight = 69;
 const xPos = 230;
 const yPos = 260;
 
-const width = canvas.width = 600;
-const height = canvas.height = 600;
 
 const fps = 60;
 const secUpdate = 1 * fps;
@@ -15,7 +13,7 @@ let count = 0;
 
 canvas.style.marginTop = window.innerHeight / 2 - height / 2 + "px";
 
-const spritesheet = new Image("assets/charz.png");
+const spritesheet = new Image("acharz.png");
 
 function animate() {
 	//start drawing the sprite on sheet
