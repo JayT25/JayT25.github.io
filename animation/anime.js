@@ -5,7 +5,7 @@ const frameWidth = 63;
 const frameHeight = 69;
 const xPos = 230;
 const yPos = 260;
-
+const scale = 1;
 
 const fps = 60;
 const secUpdate = 1 * fps;
